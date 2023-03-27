@@ -1,7 +1,7 @@
 // idf.py build
 // idf.py flash -p COM3
 #include <stdio.h>
-#include "C:/Espressif/frameworks/esp-idf-v5.0.1/components/freertos/FreeRTOS-Kernel/include/freertos/FreeRTOS.h"
+#include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 #include "driver/gpio.h"
 #include "sdkconfig.h"
@@ -29,6 +29,6 @@ void app_main(void)
 
         printf("Turning the LED on\n");
         gpio_set_level(BLINK_GPIO, 1);
-        vTaskDelay(250 / portTICK_PERIOD_MS);
+        vTaskDelay(500 / portTICK_PERIOD_MS);
     }
 }
