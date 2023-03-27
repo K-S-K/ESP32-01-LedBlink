@@ -25,10 +25,10 @@ void app_main(void)
     {
         printf("Turning the LED off\n");
         gpio_set_level(BLINK_GPIO, 0);
-        vTaskDelay(100 / portTICK_PERIOD_MS);
+        vTaskDelay(1000 / portTICK_PERIOD_MS);
 
         printf("Turning the LED on\n");
         gpio_set_level(BLINK_GPIO, 1);
-        vTaskDelay(100 / portTICK_PERIOD_MS);
+        vTaskDelay(250 / portTICK_PERIOD_MS);
     }
 }
