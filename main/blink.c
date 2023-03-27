@@ -27,7 +27,6 @@ void app_main(void)
         gpio_set_level(BLINK_GPIO, 0);
         vTaskDelay(100 / portTICK_PERIOD_MS);
 
-        /* Blink on (output high) */
         printf("Turning the LED on\n");
         gpio_set_level(BLINK_GPIO, 1);
         vTaskDelay(100 / portTICK_PERIOD_MS);
