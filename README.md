@@ -14,3 +14,4 @@ This project starts a FreeRTOS task to blink an LED.
 ![The device description.](docs/pinout.png)
 
 
+The next proxect in my MCU way is [ESP32-02-OLed-SSD1366](https://github.com/K-S-K/ESP32-02-OLed-SSD1366). It's about the connectiong OLED display to the microcontroller.
